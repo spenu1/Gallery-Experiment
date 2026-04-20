@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cu3jl2ixsbgxh"]
+
+[ext_resource type="PackedScene" uid="uid://dy5qhfo1ltegb" path="res://Gallery Blend.glb" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://bgkmxyw21pc1m" path="res://addons/PlayerCharacter/player_character_scene.tscn" id="2_uu6xs"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_uu6xs"]
+
+[node name="Node3D" type="Node3D" unique_id=191616092]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=113578864]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22577572, 1.2727867, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1582112129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4000008, 0.13527906, 0)
+mesh = SubResource("CapsuleMesh_uu6xs")
+
+[node name="PlayerCharacter" parent="." unique_id=841616460 instance=ExtResource("2_uu6xs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16510725, 0.4389019, -1.9087609)
+collision_layer = 1
+
+[node name="Gallery Blend" parent="." unique_id=1355804347 instance=ExtResource("1_glv2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.787561, -1.7135677, 6.697818)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=472079336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.457217, 1.652319, -0.69622564)
+light_energy = 3.059
+omni_range = 10.422506
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=562445135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31810427, 1.652319, -0.69622564)
+light_energy = 11.931
+omni_range = 9.49875
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=547096772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.811157, 1.652319, -0.69622564)
+light_energy = 6.861
+omni_range = 11.584414
