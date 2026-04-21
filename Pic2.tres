@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dicdcm3ngtkem"]
+
+[resource]
+resource_name = "Pic2"
+transparency = 4
+cull_mode = 2
+roughness = 0.5

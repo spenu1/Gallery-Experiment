@@ -140,7 +140,9 @@ stream = SubResource("AudioStreamRandomizer_fvg16")
 
 [node name="CameraHolder" parent="." unique_id=367391257 instance=ExtResource("9_bnids")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.083379626)
+max_spring_length = 3.33
+min_spring_length = 1.8199999999999998
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1428809059]
 unique_name_in_owner = true
@@ -189,6 +191,7 @@ script = ExtResource("17_qmq2g")
 play_char = NodePath("..")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HUD" unique_id=571861952]
+visible = false
 offset_left = 8.0
 offset_top = 5.0
 offset_right = 312.0
@@ -278,6 +281,7 @@ text = "....."
 label_settings = ExtResource("17_c1i0s")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="HUD" unique_id=1774746481]
+visible = false
 offset_left = 920.0
 offset_top = 7.0
 offset_right = 1251.0
