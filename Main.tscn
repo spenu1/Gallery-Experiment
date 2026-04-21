@@ -28,6 +28,7 @@ stretch_shrink = 3
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=244812615]
 transparent_bg = true
+physics_object_picking = true
 size = Vector2i(384, 216)
 
 [node name="PlayerCharacter" parent="SubViewportContainer/SubViewport" unique_id=841616460 instance=ExtResource("2_uu6xs")]
